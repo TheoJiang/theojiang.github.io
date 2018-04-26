@@ -122,6 +122,13 @@ menu:
   #tags: /tags/ || tags
   #categories: /categories/ || th
   archives: /archives/ || archive
+  u3d: /u3d/ || gamepad
+  shader: /shader/ || trophy
+  openGL: /opengl/ || gavel
+  c#: /csharp/ || connectdevelop
+  c++: /cpp/ || connectdevelop
+  note: /note/ || sticky-note
+
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
@@ -136,9 +143,9 @@ menu_settings:
 # ---------------------------------------------------------------
 
 # Schemes
-scheme: Muse
+#scheme: Muse
 #scheme: Mist
-#scheme: Pisces
+scheme: Pisces
 #scheme: Gemini
 
 
@@ -192,7 +199,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-#avatar: /images/avatar.gif
+avatar: /images/headicon.jpg
 
 # Table Of Contents in the Sidebar
 toc:

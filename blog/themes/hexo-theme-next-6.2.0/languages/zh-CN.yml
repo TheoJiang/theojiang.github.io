@@ -15,6 +15,12 @@ menu:
   schedule: 日程表
   sitemap: 站点地图
   commonweal: 公益 404
+  u3d: Unity3D
+  shader: 着色器
+  opengl: OpenGL
+  c#: C#
+  c++: C++
+  note: 备忘
 sidebar:
   overview: 站点概览
   toc: 文章目录
