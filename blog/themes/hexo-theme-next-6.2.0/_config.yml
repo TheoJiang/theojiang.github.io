@@ -119,15 +119,15 @@ index_with_subtitle: false
 menu:
   home: / || home
   #about: /about/ || user
-  #tags: /tags/ || tags
+  tags: /tags/ || tags
   #categories: /categories/ || th
-  archives: /archives/ || archive
-  u3d: /u3d/ || gamepad
-  shader: /shader/ || trophy
-  openGL: /opengl/ || gavel
-  c#: /csharp/ || connectdevelop
-  c++: /cpp/ || connectdevelop
-  note: /note/ || sticky-note
+  #archives: /archives/ || archive
+  u3d: /categories/u3d  || gamepad
+  shader: /categories/shader/ || trophy
+  opengl: /categories/opengl/ || gavel
+  csharp: /categories/csharp/ || connectdevelop
+  cpp: /categories/cpp/ || connectdevelop
+  note: /categories/note/ || sticky-note
 
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
