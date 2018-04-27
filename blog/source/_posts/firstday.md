@@ -3,7 +3,7 @@ title: 博客用途说明
 date: 2018-04-27 02:02:07
 tags: 
 categories:
-    - note
+    - 备忘
 ---
 
 ## 启
