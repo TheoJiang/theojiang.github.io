@@ -122,12 +122,12 @@ menu:
   tags: /tags/ || tags
   #categories: /categories/ || th
   #archives: /archives/ || archive
-  u3d: /u3d/  || gamepad
+  u3d: /categories/Unity3D  || gamepad
   shader: /categories/shader/ || trophy
   opengl: /categories/opengl/ || gavel
-  csharp: /categories/csharp/ || connectdevelop
-  cpp: /categories/cpp/ || connectdevelop
-  备忘: /categories/备忘/ || sticky-note
+  csharp: /categories/U3DC#/ || connectdevelop
+  cpp: /categories/CPlusPlus/ || connectdevelop
+  note: /categories/备忘/ || sticky-note
 
   #schedule: /schedule/ || calendar
   #sitemap: /sitemap.xml || sitemap
