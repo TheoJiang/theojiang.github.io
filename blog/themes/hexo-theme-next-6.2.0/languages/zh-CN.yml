@@ -18,8 +18,8 @@ menu:
   u3d: Unity3D
   shader: 着色器
   opengl: OpenGL
-  c#: C#
-  c++: C++
+  csharp: C#
+  cpp: C++
   note: 备忘
 sidebar:
   overview: 站点概览
