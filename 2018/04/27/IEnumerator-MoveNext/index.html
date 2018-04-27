@@ -126,17 +126,17 @@
 
 
 
-  <meta name="description" content="ALL IN ONE">
+  <meta name="description" content="“虽然一直在用着C#做Unity3D开发，但是有的东西却没有去细究过。以后便持续对以前没有去深究的东西在这里做下小研究。做Unity3D时一直在使用协程，协程有利用了IEnumerator,最近在项目中有看到单独的调用IEnumerator的情况，好奇下做了下研究。”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="IEnumerator.MoveNext">
 <meta property="og:url" content="http://yoursite.com/2018/04/27/IEnumerator-MoveNext/index.html">
 <meta property="og:site_name" content="Theo Jiang&#39;s Blog">
-<meta property="og:description" content="ALL IN ONE">
+<meta property="og:description" content="“虽然一直在用着C#做Unity3D开发，但是有的东西却没有去细究过。以后便持续对以前没有去深究的东西在这里做下小研究。做Unity3D时一直在使用协程，协程有利用了IEnumerator,最近在项目中有看到单独的调用IEnumerator的情况，好奇下做了下研究。”">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-27T06:48:15.921Z">
+<meta property="og:updated_time" content="2018-04-27T10:41:13.721Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="IEnumerator.MoveNext">
-<meta name="twitter:description" content="ALL IN ONE">
+<meta name="twitter:description" content="“虽然一直在用着C#做Unity3D开发，但是有的东西却没有去细究过。以后便持续对以前没有去深究的东西在这里做下小研究。做Unity3D时一直在使用协程，协程有利用了IEnumerator,最近在项目中有看到单独的调用IEnumerator的情况，好奇下做了下研究。”">
 
 
 
@@ -391,7 +391,7 @@
                 
               
 
-              <time title="创建时间：2018-04-27 14:24:33 / 修改时间：14:48:15" itemprop="dateCreated datePublished" datetime="2018-04-27T14:24:33+08:00">2018-04-27</time>
+              <time title="创建时间：2018-04-27 14:24:33 / 修改时间：18:41:13" itemprop="dateCreated datePublished" datetime="2018-04-27T14:24:33+08:00">2018-04-27</time>
             
 
             
@@ -447,7 +447,12 @@
       
 
       
-        
+        <p>“虽然一直在用着C#做Unity3D开发，但是有的东西却没有去细究过。以后便持续对以前没有去深究的东西在这里做下小研究。<br>做Unity3D时一直在使用协程，协程有利用了IEnumerator,最近在项目中有看到单独的调用IEnumerator的情况，好奇下做了下研究。”</p>
+<a id="more"></a>
+<figure class="highlight cs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">using</span> System;</span><br><span class="line"><span class="keyword">using</span> System.Collections;</span><br><span class="line"><span class="keyword">namespace</span> <span class="title">IEnumertorTest</span></span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">class</span> <span class="title">Program</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">Main</span>(<span class="params"><span class="keyword">string</span>[] args</span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            Tclass t = <span class="keyword">new</span> Tclass();</span><br><span class="line">            t.begin();</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">class</span> <span class="title">Tclass</span></span><br><span class="line">    &#123;       </span><br><span class="line">        <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">begin</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            IEnumerator t = test();</span><br><span class="line">            t.MoveNext();</span><br><span class="line">            Console.WriteLine(t.Current);</span><br><span class="line">            t.MoveNext();</span><br><span class="line">            Console.WriteLine(t.Current);</span><br><span class="line">            t.MoveNext();</span><br><span class="line">            Console.WriteLine(t.Current);</span><br><span class="line">            t.MoveNext();</span><br><span class="line">            Console.WriteLine(t.Current);</span><br><span class="line">            </span><br><span class="line">        &#125;</span><br><span class="line">        <span class="function">IEnumerator <span class="title">test</span>(<span class="params"></span>)</span></span><br><span class="line"><span class="function">        </span>&#123;</span><br><span class="line">            Console.WriteLine(<span class="string">"Hello World!111"</span>);</span><br><span class="line">            <span class="keyword">yield</span> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">            Console.WriteLine(<span class="string">"Hello World!222"</span>);</span><br><span class="line">            <span class="keyword">yield</span> <span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">            Console.WriteLine(<span class="string">"Hello World!333"</span>);</span><br><span class="line">            <span class="keyword">yield</span> <span class="keyword">return</span> <span class="number">2</span>;</span><br><span class="line">        &#125; </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>输出结果：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Hello World!111</span><br><span class="line">0</span><br><span class="line">Hello World!222</span><br><span class="line">1</span><br><span class="line">Hello World!333</span><br><span class="line">2</span><br><span class="line">2</span><br></pre></td></tr></table></figure></p>
+<p>可知MoveNext的用处是执行下一代码段。<br>yeild return返回的类型为object, 如果是IEnumerator<t>则隐式转换为泛型类型参数。</t></p>
+
       
     </div>
 
